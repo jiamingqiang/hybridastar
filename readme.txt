@@ -1,0 +1,4 @@
+1、该catkin工程共有四个rosnode：hybrid_astar，tf_broadcaster，map_server，rviz，我们在调试的时候重点关注的是hybrid_astar这个，所以在.vscode的launch.json里把ros的attach模式放进去，这样在开始debug时在点击三角形启动按钮后才会有ROS：Attach这个选项让我们选择，而ROS：launch是同时调试多个进程用的，在这里我们不用。
+2、启动调试的步骤和配置参见连接：https://blog.csdn.net/lyh458/article/details/115711357?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-115711357-blog-125458398.pc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-115711357-blog-125458398.pc_relevant_multi_platform_whitelistv3&utm_relevant_index=2
+3、在按上面说的配置好后，要想正确进入调试界面，启动步骤必须是：1.先设置断点2.按工程readme里的说明用命令行先让程序运行起来，rviz起来后先不要设置起点和终点3.点击vscode界面的开始调试的三角形按钮选择ROS：Attach的单进程模式在命令行里选择c++ hybridastar，然后再在RVIZ上设置启点和终点成功进入调试界面
+4、由于ubuntu版本是20.04所以选用20.04-CI的分支

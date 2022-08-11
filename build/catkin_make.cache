@@ -1,0 +1,2 @@
+path_planner
+-DCMAKE_EXPORT_COMPILE_COMMANDS=Yes -DCATKIN_DEVEL_PREFIX=/home/chia/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/chia/catkin_ws/install -G Unix Makefiles
